@@ -4,8 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>个人网页</title>
+    <link rel="stylesheet" href="index_css/indexs.css">
 </head>
 <body>
-    <h1>欢迎</h1>
+    <div id="w">
+        <div id="n">
+        </div>
+    </div>
+    <script>
+        // 获取按钮元素
+        const button = document.getElementById('n');
+
+        // 添加点击事件监听器
+        button.addEventListener('click', function() {
+            // 导航到另一个页面
+            window.location.href = 'index2.html'; // 替换为目标网页的URL
+        });
+    </script>
 </body>
 </html>
