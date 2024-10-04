@@ -4,29 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>个人网页</title>
-    <link rel="stylesheet" href="index_css/indexs.css">
 </head>
 <body>
-    <div>
-        第一天(markdown暂时无法正确打开)
-    </div>
-    <div id="c">
-        c语言
-    </div>
-    <div id="web">
-        web
-    </div>
+    markdown暂时无法使用
+    <dl>
+        <dt>第一天</dt>
+        <dd id="c1">c语言</dd>
+        <dd id="web1">web</dd>
+        <dt>第二天</dt>
+        <dd id="web2">web</dd>
+    </dl>
+<!--    <div id="c">-->
+<!--        c语言-->
+<!--    </div>-->
+<!--    <div id="web">-->
+<!--        web-->
+<!--    </div>-->
     <script>
-        const button = document.getElementById('c');
-
+        const button = document.getElementById('c1');
         button.addEventListener('click', function() {
             window.location.href = 'data/day1/C.md';
         });
 
-        const button1 = document.getElementById('web');
-
+        const button1 = document.getElementById('web1');
         button1.addEventListener('click', function() {
             window.location.href = 'data/day1/web.md';
+        });
+
+        const button2 = document.getElementById('web2');
+        button2.addEventListener('click', function() {
+            window.location.href = 'data/day2/web.md';
         });
 
 
